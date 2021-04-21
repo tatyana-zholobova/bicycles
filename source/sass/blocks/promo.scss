@@ -1,0 +1,148 @@
+.promo {
+  color: $basic-white;
+}
+
+.promo__inner {
+  margin-left: auto;
+  margin-right: auto;
+  width: 875px;
+  display: flex;
+}
+
+.promo h2 {
+  @include reset;
+  margin-bottom: 24px;
+  font-weight: bold;
+  font-size: 46px;
+  line-height: 64px;
+  letter-spacing: -0.005em;
+}
+
+.promo p {
+  @include reset;
+  font-weight: 300;
+  font-size: 20px;
+  line-height: 32px;
+  letter-spacing: -0.005em;
+  opacity: 0.8;
+}
+
+.promo__text-wrapper {
+  width: 390px;
+  margin-right: 20px;
+  padding-top: 46px;
+}
+
+.promo__form-wrapper {
+  width: 327px;
+  margin-left: auto;
+}
+
+.promo__form-wrapper p {
+  margin-bottom: 20px;
+  font-weight: 600;
+  font-size: 17px;
+  line-height: 28px;
+  opacity: 1;
+  text-align: center;
+}
+
+.promo__form {
+  display: flex;
+  flex-direction: column;
+}
+
+.promo__form input {
+  margin-bottom: 20px;
+  height: 48px;
+  padding: 12px 20px 12px 29px;
+  box-sizing: border-box;
+  font-size: 15px;
+  line-height: 24px;
+  border: 1px solid #C9CCD4;
+  border-radius: 4px;
+  &::placeholder {
+    color: rgba($color: $input-text, $alpha: 0.5);
+  }
+}
+
+.promo__form input:focus {
+  border: 2px solid $accent-color;
+}
+
+
+.promo__form button {
+  height: 51px;
+  font-weight: 600;
+  font-size: 15px;
+  line-height: 21px;
+  border-radius: 6px;
+  border: none;
+}
+
+@media (max-width: $desktop-width) {
+  .promo__inner {
+    flex-direction: column;
+    width: auto;
+    align-items: center;
+  }
+  .promo__text-wrapper {
+    width: 435px;
+    padding-top: 0;
+    margin-bottom: 146px;
+    margin-right: 0;
+    line-height: 28px;
+  }
+  .promo__form-wrapper {
+    width: 321px;
+    margin-left: 0;
+    margin-bottom: 24px;
+    color:$basic-black;
+  }
+  .promo h2 {
+    margin-bottom: 20px;
+    font-size: 30px;
+    line-height: 42px;
+    text-align: center;
+  }
+
+  .promo p {
+    font-size: 18px;
+    line-height: 32px;
+    text-align: center;
+  }
+  .promo__form input {
+    padding-left: 21px;
+  }
+}
+
+@media (max-width: $desktop-width) {
+  .promo__text-wrapper {
+    width: auto;
+    padding: 0 16px;
+  }
+}
+
+@media (max-width: $tablet-width) {
+  .promo__text-wrapper {
+    margin-bottom: 0;
+  }
+  .promo__text-wrapper p {
+    margin-top: auto;
+    min-height: 165px;
+    box-sizing: border-box;
+    padding-bottom: 30px;
+  }
+  .promo__form-wrapper {
+    width: auto;
+    max-width: 400px;
+    padding-top: 72px;
+    padding-right: 16px;
+    padding-right: 16px;
+    padding-left: 17px;
+  }
+  .promo__form-wrapper p {
+    font-size: 18px;
+    line-height: 28px;
+  }
+}

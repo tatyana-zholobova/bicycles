@@ -1,0 +1,9 @@
+.button {
+  background-color: $accent-color;
+}
+
+.button:hover,
+.button:focus,
+.button:active {
+  background-color: $accent-color-dark;
+}

@@ -1,0 +1,23 @@
+.page {
+  height: 100%;
+}
+
+.page__body {
+  @include reset;
+  min-height: 100%;
+  display: grid;
+  grid-template-rows: min-content 1fr min-content;
+  align-content: start;
+  font-family: $font-family;
+  font-weight: normal;
+}
+
+.page__promo {
+  margin-top: 261px;
+}
+
+@media (max-width: $desktop-width) {
+  .page__promo {
+    margin-top: 0;
+  }
+}

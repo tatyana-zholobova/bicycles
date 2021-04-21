@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html class="page" lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Магазин велосипедов</title>
+  <link rel="preload" href="fonts/open-sans.woff2" as="font" crossorigin="anonymous" )>
+  <link rel="preload" href="fonts/open-sans-bold.woff2" as="font" crossorigin="anonymous" )>
+  <link rel="stylesheet" href="css/style.min.css">
+</head>
+
+<body>
+
+  <body class="page__body">
+    <header class="header">
+      <div class="header__block">
+        <nav class="header__site-navigation">
+          <a class="header__logo">
+            <img src="img/logo.svg" alt="Логотип магазина велосипедов Moon" width="68" height="20">
+          </a>
+          <ul class="header__menu header__menu--close">
+            <li class=" header__item"><a href="#">О нас</a></li>
+            <li class="header__item"><a href="#">Виды велосипедов</a></li>
+            <li class="header__item"><a href="#">Видео про велосипеды</a></li>
+            <li class="header__item"><a href="#">Контакты</a></li>
+          </ul>
+          <button class="header__toggle header__toggle--open button" type="button" aria-label="Открыть меню"></button>
+          <button class="header__toggle header__toggle--close" type="button" aria-label="Закрыть меню">
+            <svg class="header__icon-close" width="23" height="22">
+              <use xlink:href="img/sprite_auto.svg#icon-cross"></use>
+            </svg>
+          </button>
+        </nav>
+      </div>
+    </header>
+    <main>
+      <div class="main-block">
+        <h1 class="visually-hidden">Главной страница магазина велосипедов Moon</h1>
+      </div>
+      <section class="page__promo promo">
+        <div class="promo__inner">
+          <div class="promo__text-wrapper">
+            <h2>Мы продаем велосипеды</h2>
+            <p>Наш магазин отбирает только самые лучшие велосипеды для продажи</p>
+          </div>
+          <div class="promo__form-wrapper">
+            <p>Заполните поля ниже и мы подберем велосипед Вашей мечты</p>
+            <form class="promo__form" action="https://echo.htmlacademy.ru" method="POST">
+              <label class="visually-hidden" for="name">Введите ваше имя</label>
+              <input type="text" name="name" id="name" placeholder="Введите Ваше Имя" required>
+              <label class="visually-hidden" for="telephone">Введите ваш номер телефона</label>
+              <input type="tel" name="telephone" id="telephone" placeholder="Введите Ваш номер телефона" required>
+              <button class="form__button button" type="submit">Подобрать велосипед мечты</button>
+            </form>
+          </div>
+        </div>
+      </section>
+      </div>
+    </main>
+  </body>
+
+</html>
