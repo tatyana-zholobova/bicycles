@@ -14,10 +14,12 @@
 
 .page__promo {
   margin-top: 261px;
+  margin-bottom: 372px;
 }
 
 @media (max-width: $desktop-width) {
   .page__promo {
     margin-top: 0;
+    margin-bottom: 26px;
   }
 }
