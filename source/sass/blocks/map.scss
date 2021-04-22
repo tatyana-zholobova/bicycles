@@ -1,0 +1,96 @@
+.map {
+  padding-top: 249px;
+  padding-right: 242px;
+  padding-left: 241px;
+}
+
+.map__text-wrapper {
+  padding-right: 14px;
+}
+
+.map h2 {
+  @include reset;
+  margin-bottom: 30px;
+  font-weight: 600;
+  font-size: 30px;
+  line-height: 30px;
+  letter-spacing: -0.005em;
+  text-align: center;
+  color: $dark-title;
+}
+
+.map p {
+  @include reset;
+  margin-bottom: 41px;
+  margin-right: auto;
+  margin-left: auto;
+  max-width: 500px;
+  text-align: center;
+  font-size: 17px;
+  line-height: 31px;
+  color: rgba($color: $basic-black, $alpha: 0.7)
+}
+
+.map__map-wrapper {
+  margin: 0 auto;
+}
+
+.map iframe {
+  width: 100%;
+  max-width: 1200px;
+  height: 530px;
+  border: none;
+}
+
+@media (max-width: $desktop-width) {
+  .map {
+    padding-top: 155px;
+    padding-right: 35px;
+    padding-left: 35px;
+  }
+
+  .map__text-wrapper {
+    padding-right: 0px;
+  }
+
+  .map h2 {
+    margin-bottom: 20px;
+    font-size: 24px;
+    line-height: 30px;
+  }
+
+  .map p {
+    margin-bottom: 20px;
+    max-width: 630px;
+  }
+
+  .map iframe {
+    height: 545px;
+  }
+}
+
+@media (max-width: $tablet-width) {
+  .map {
+    padding-top: 119px;
+    padding-right: 0;
+    padding-left: 0;
+  }
+
+  .map__text-wrapper {
+    padding-right: 15px;
+    padding-left: 15px;
+  }
+
+  .map h2 {
+    font-size: 18px;
+  }
+
+  .map p {
+    margin-bottom: 25px;
+    max-width: 630px;
+  }
+
+  .map iframe {
+    height: 250px;
+  }
+}
