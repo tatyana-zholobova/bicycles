@@ -111,10 +111,27 @@
         </li>
       </ul>
     </section>
+    <section class="video">
+      <h2>Видео про велосипеды</h2>
+      <p>В этом видео мы подробно расскажем про особенности выбора велосипеда для себя. </p>
+      <div class="video__preview-wrapper">
+        <picture>
+          <source media="(max-width: 767px)" srcset="img/preview-mobile.jpg 1x, img/preview-mobile@2x.jpg 2x">
+          <source media="(max-width: 1023px)" srcset="img/preview-tablet.jpg 1x, img/preview-tablet@2x.jpg 2x">
+          <img src="img/preview.jpg" srcset="img/preview.jpg@2x 2x" alt="Постер видео">
+        </picture>
+        <button class="video__play-button" type="button" aria-label="Воспроизвести видео">
+          <svg class="video__play-icon">
+            <use xlink:href="img/sprite_auto.svg#icon-play"></use>
+          </svg>
+        </button>
+      </div>
+    </section>
+
     <section class="map">
       <div class="map__text-wrapper">
         <h2>Как нас найти?</h2>
-        <p>Мы находимся по адресу: Санкт-Петербург, ул.&nbsp;Большая Конюшенная, д.&nbsp;19</p>
+        <p>Мы находимся по адресу: Санкт&#8209Петербург, ул.&nbsp;Большая Конюшенная, д.&nbsp;19</p>
       </div>
       <div class="map__map-wrapper">
         <iframe

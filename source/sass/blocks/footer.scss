@@ -52,15 +52,15 @@
   }
 
   .footer__contacts {
-    padding-right: 0;
+    padding-right: 10px;
   }
 }
 
 @media (max-width: $tablet-width) {
   .footer {
-    padding-top: 33px;
-    padding-left: 22px;
-    padding-right: 30px;
+    padding-top: 27px;
+    padding-left: 27px;
+    padding-right: 22px;
     padding-bottom: 53px;
   }
 
@@ -68,11 +68,15 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+    padding-right: 0;
   }
   .footer__contacts-wrapper {
     &--email {
-      margin-bottom: 22px;
+      margin-bottom: 24px;
       margin-right: 0;
+    }
+    &--phone {
+      padding-right: 15px;
     }
   }
 }

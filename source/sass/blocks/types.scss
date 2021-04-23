@@ -1,6 +1,6 @@
 .types {
   padding-top: 149px;
-  padding-bottom: 147px;
+  padding-bottom: 149px;
   padding-left: 30px;
   padding-right: 30px;
   background-color: $grey-background;
@@ -106,7 +106,7 @@
 @media (max-width: $desktop-width) {
   .types {
     padding-top: 50px;
-    padding-bottom: 20px;
+    padding-bottom: 18px;
   }
 
   .types__list {
@@ -114,12 +114,12 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    margin-right: -50px;
     gap: 0;
 
   }
   .types__item {
-    margin-right: 50px;
+    margin-right: 25px;
+    margin-left: 25px;
     margin-bottom: 50px;
   }
 
@@ -167,9 +167,9 @@
 
 @media (max-width: $tablet-width) {
   .types {
-    padding-left: 25px;
-    padding-right: 25px;
-    padding-bottom: 10px;
+    padding-left: 0;
+    padding-right: 0;
+    padding-bottom: 11px;
   }
   .types__img-wrapper {
     &--road {
