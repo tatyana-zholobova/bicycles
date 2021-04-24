@@ -2,6 +2,7 @@
   height: 100%;
 }
 
+
 .page__body {
   @include reset;
   min-height: 100%;
@@ -13,13 +14,26 @@
 }
 
 .page__promo {
-  margin-top: 261px;
-  margin-bottom: 240px;
+  margin-top: -65px;
+}
+
+.page__feedback {
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: -517px;
+  margin-bottom: 243px;
 }
 
 @media (max-width: $desktop-width) {
   .page__promo {
     margin-top: 0;
     margin-bottom: 26px;
+  }
+  .page__promo {
+    margin-top: -50px;
+  }
+  .page__feedback {
+    margin-top: 0;
+    margin-bottom: 50px;
   }
 }

@@ -1,11 +1,22 @@
 .promo {
+  min-height: 825px;
   color: $basic-white;
+  background-color: $basic-black;
+  background-image: url("../img/bike-background.jpg");
+  background-position: top center;
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  @media (min-resolution: 2dppx) {
+    background-image: url("../img/bike-background@2x.jpg");
+  }
 }
 
 .promo__inner {
   margin-left: auto;
   margin-right: auto;
-  width: 875px;
+  padding-top: 327px;
+  width: 874px;
   display: flex;
 }
 
@@ -70,7 +81,6 @@
   border: 2px solid $accent-color;
 }
 
-
 .promo__form button {
   height: 51px;
   font-weight: 600;
@@ -81,7 +91,18 @@
 }
 
 @media (max-width: $desktop-width) {
+  .promo {
+    min-height:340px;
+    margin-bottom: 0;
+    background-image: url("../img/bike-background-tablet.jpg");
+
+  @media (min-resolution: 2dppx) {
+    background-image: url("../img/bike-background-tablet@2x.jpg");
+    }
+  }
+
   .promo__inner {
+    padding-top: 135px;
     flex-direction: column;
     width: auto;
     align-items: center;
@@ -89,16 +110,10 @@
   .promo__text-wrapper {
     padding: 0 16px;
     width: 435px;
-    margin-bottom: 145px;
     margin-right: 0;
     line-height: 28px;
   }
-  .promo__form-wrapper {
-    width: 321px;
-    margin-left: 0;
-    margin-bottom: 24px;
-    color:$basic-black;
-  }
+
   .promo h2 {
     margin-bottom: 20px;
     font-size: 30px;
@@ -111,14 +126,21 @@
     line-height: 32px;
     text-align: center;
   }
-  .promo__form input {
-    padding-left: 21px;
-  }
-  .promo__form-wrapper p {
-    margin-bottom: 26px;
-  }
+
 }
 @media (max-width: $tablet-width) {
+  .promo {
+    min-height: 390;
+    background-image: url("../img/bike-background-mobile.jpg");
+
+  @media (min-resolution: 2dppx) {
+    background-image: url("../img/bike-background-mobile@2x.jpg");
+    }
+  }
+  .promo__inner {
+    padding-top: 121px;
+  }
+
   .promo__text-wrapper {
     margin-bottom: 0;
     width: auto;
@@ -129,18 +151,5 @@
     min-height: 165px;
     box-sizing: border-box;
     padding-bottom: 30px;
-  }
-  .promo__form-wrapper {
-    width: auto;
-    max-width: 400px;
-    padding-top: 72px;
-    padding-right: 16px;
-    padding-right: 16px;
-    padding-left: 17px;
-  }
-  .promo__form-wrapper p {
-    margin-bottom: 18px;
-    font-size: 18px;
-    line-height: 28px;
   }
 }
