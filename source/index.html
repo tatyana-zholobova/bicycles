@@ -17,10 +17,10 @@
     <div class="header__wrapper">
       <nav class="header__site-navigation header__site-navigation--close">
         <ul class="header__menu">
-          <li class=" header__item"><a href="#">О нас</a></li>
-          <li class="header__item"><a href="#">Виды велосипедов</a></li>
-          <li class="header__item"><a href="#">Видео про велосипеды</a></li>
-          <li class="header__item"><a href="#">Контакты</a></li>
+          <li class=" header__item"><a href="#facts">О нас</a></li>
+          <li class="header__item"><a href="#types">Виды велосипедов</a></li>
+          <li class="header__item"><a href="#video">Видео про велосипеды</a></li>
+          <li class="header__item"><a href="#map">Контакты</a></li>
         </ul>
         <button class="header__toggle header__toggle--close" type="button" aria-label="Закрыть меню">
           <svg class="header__icon-close" width="23" height="22">
@@ -44,6 +44,8 @@
         <div class="promo__text-wrapper">
           <h2>Мы продаем велосипеды</h2>
           <p>Наш магазин отбирает только самые лучшие велосипеды для продажи</p>
+        </div>
+      </div>
     </section>
     <section class="page__feedback feedback">
       <div class="feedback__wrapper">
@@ -58,7 +60,7 @@
         </form>
       </div>
     </section>
-    <section class="page__facts facts">
+    <section class="page__facts facts" id="facts">
       <h2>Несколько фактов о нас</h2>
       <div class="facts__list-wrapper">
         <ol class="facts__list">
@@ -69,16 +71,20 @@
         </ol>
       </div>
     </section>
-    <section class="types">
+    <section class="types" id="types">
       <h2>Виды велосипедов</h2>
       <ul class="types__list">
         <li class="types__item">
           <div class="types__img-wrapper types__img-wrapper--road">
             <picture>
+              <!-- 1х: width: 270px height: 300px; 2x: width: 540px height: 600px -->
               <source type="image/webp" media="(max-width: 1023px)"
                 srcset="img/road-bike-tablet.webp 1x, img/road-bike-tablet@2x.webp 2x">
+              <!-- 1х: width: 342px height: 503px; 2x: width: 684px height: 1006px  -->
               <source type="image/webp" srcset="img/road-bike.webp 1x, img/road-bike@2x.webp 2x">
+              <!-- 1х: width: 270px height: 300px; 2x: width: 540px height: 600px -->
               <source media="(max-width: 1023px)" srcset="img/road-bike-tablet.jpg 1x, img/road-bike-tablet@2x.jpg 2x">
+              <!-- 1х: width: 342px height: 503px; 2x: width: 684px height: 1006px -->
               <img src="img/road-bike.jpg" srcset="img/road-bike@2x.jpg 2x" alt="Дорожный велосипед">
             </picture>
           </div>
@@ -87,11 +93,15 @@
         <li class="types__item">
           <div class="types__img-wrapper types__img-wrapper--mountain">
             <picture>
+              <!-- 1х: width: 270px height: 300px; 2x: width: 540px height: 600px -->
               <source type="image/webp" media="(max-width: 1023px)"
                 srcset="img/mountain-bike-tablet.webp 1x, img/mountain-bike-tablet@2x.webp 2x">
+              <!-- 1х: width: 342px height: 566px; 2x: width: 684px height: 1132px -->
               <source type="image/webp" srcset="img/mountain-bike.webp 1x, img/mountain-bike@2x.webp 2x">
+              <!-- 1х: width: 270px height: 300px; 2x: width: 540px height: 600px -->
               <source media="(max-width: 1023px)"
                 srcset="img/mountain-bike-tablet.jpg 1x, img/mountain-bike-tablet@2x.jpg 2x">
+              <!-- 1х: width: 342px height: 566px; 2x: width: 684px height: 1132px -->
               <img src="img/mountain-bike.jpg" srcset="img/mountain-bike@2x.jpg 2x" alt="Горный велосипед">
             </picture>
           </div>
@@ -100,11 +110,15 @@
         <li class="types__item">
           <div class="types__img-wrapper types__img-wrapper--children">
             <picture>
+              <!-- 1х: width: 270px height: 300px; 2x: width: 540px height: 600px -->
               <source type="image/webp" media="(max-width: 1023px)"
                 srcset="img/children-bike-tablet.webp 1x, img/children-bike-tablet@2x.webp 2x">
+              <!-- 1х: width: 342px height: 513px; 2x: width: 684px height: 1016px -->
               <source type="image/webp" srcset="img/children-bike.webp 1x, img/children-bike@2x.webp 2x">
+              <!-- 1х: width: 270px height: 300px; 2x: width: 540px height: 600px -->
               <source media="(max-width: 1023px)"
                 srcset="img/children-bike-tablet.jpg 1x, img/children-bike-tablet@2x.jpg 2x">
+              <!-- 1х: width: 342px height: 513px; 2x: width: 684px height: 1016px -->
               <img src="img/children-bike.jpg" srcset="img/children-bike@2x.jpg 2x" alt="Детский велосипед">
             </picture>
           </div>
@@ -112,32 +126,38 @@
         </li>
       </ul>
     </section>
-    <section class="video">
+    <section class="video" id="video">
       <h2>Видео про велосипеды</h2>
       <p>В этом видео мы подробно расскажем про особенности выбора велосипеда для себя. </p>
       <div class="video__preview-wrapper">
         <picture>
+          <!-- 1х: width: 288px height: 162px; 2x: width: 576px height: 324px -->
           <source type="image/webp" media="(max-width: 767px)"
             srcset="img/preview-mobile.webp 1x, img/preview-mobile@2x.webp 2x">
+          <!-- 1х: width: 503px height: 282px; 2x: width: 1006px height: 564px -->
           <source type="image/webp" media="(max-width: 1023px)"
             srcset="img/preview-tablet.webp 1x, img/preview-tablet@2x.webp 2x">
+          <!-- 1х: width: 929px height: 522px; 2x: width: 1858px height: 1044px -->
           <source type="image/webp" srcset="img/preview.webp 1x, img/preview@2x.webp 2x">
+          <!-- 1х: width: 288px height: 162px; 2x: width: 576px height: 324px -->
           <source media="(max-width: 767px)" srcset="img/preview-mobile.jpg 1x, img/preview-mobile@2x.jpg 2x">
+          <!-- 1х: width: 503px height: 282px; 2x: width: 1006px height: 564px -->
           <source media="(max-width: 1023px)" srcset="img/preview-tablet.jpg 1x, img/preview-tablet@2x.jpg 2x">
-          <img src="img/preview.jpg" srcset="img/preview.jpg@2x 2x" alt="Постер видео">
+          <!-- 1х: width: 929px height: 522px; 2x: width: 1858px height: 1044px -->
+          <img src="img/preview.jpg" srcset="img/preview.jpg@2x 2x" alt="Постер видео" width="929" height="522">
         </picture>
         <button class="video__play-button" type="button" aria-label="Воспроизвести видео">
-          <svg class="video__play-icon">
+          <svg class="video__play-icon" width="65" height="65">
             <use xlink:href="img/sprite_auto.svg#icon-play"></use>
           </svg>
         </button>
       </div>
     </section>
 
-    <section class="map">
+    <section class="map" id="map">
       <div class="map__text-wrapper">
         <h2>Как нас найти?</h2>
-        <p>Мы находимся по адресу: Санкт&#8209Петербург, ул.&nbsp;Большая Конюшенная, д.&nbsp;19</p>
+        <p>Мы находимся по адресу: Санкт&#8209;Петербург, ул.&nbsp;Большая Конюшенная, д.&nbsp;19</p>
       </div>
       <div class="map__map-wrapper">
         <iframe
@@ -162,7 +182,7 @@
       </div>
     </div>
   </footer>
-  <script src="js/script.js"></script>
+  <script src="js/main.js"></script>
 </body>
 
 </html>

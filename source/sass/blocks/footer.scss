@@ -10,11 +10,13 @@
   line-height: 22px;
   text-decoration: none;
   color: rgba($color: $basic-black, $alpha: 0.5);
+
   &:hover,
   &:focus {
     color: $accent-color;
     opacity: 1;
   }
+
   &:active {
     color: $accent-color-dark;
   }
@@ -31,6 +33,7 @@
 .footer__contacts-wrapper {
   display: flex;
   align-items: center;
+
   &--email {
     margin-right: 90px;
   }
@@ -38,6 +41,7 @@
 
 .footer__icon {
   margin-right: 15px;
+
   &--phone {
     fill: transparent;
   }
@@ -70,11 +74,13 @@
     align-items: center;
     padding-right: 0;
   }
+
   .footer__contacts-wrapper {
     &--email {
       margin-bottom: 24px;
       margin-right: 0;
     }
+
     &--phone {
       padding-right: 15px;
     }

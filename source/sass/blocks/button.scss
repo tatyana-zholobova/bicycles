@@ -1,9 +1,10 @@
 .button {
   background-color: $accent-color;
-}
+  cursor: pointer;
 
-.button:hover,
-.button:focus,
-.button:active {
-  background-color: $accent-color-dark;
+  &:hover,
+  &:focus,
+  &:active {
+    background-color: $accent-color-dark;
+  }
 }

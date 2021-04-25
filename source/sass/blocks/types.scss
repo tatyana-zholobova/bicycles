@@ -21,7 +21,7 @@
   border-radius: 10px;
 }
 
-.types h2{
+.types h2 {
   @include reset-list;
   margin-bottom: 51px;
   font-weight: 600;
@@ -35,8 +35,10 @@
 .types__img-wrapper {
   position: relative;
   margin-bottom: 17px;
+
   &--road {
     margin-top: 10px;
+
     &::before {
       @include pseudo;
       z-index: 1;
@@ -53,6 +55,7 @@
 
   &--mountain {
     margin-top: 39px;
+
     &::before {
       @include pseudo;
       z-index: 2;
@@ -64,6 +67,7 @@
       background-color: transparent;
       border: 8px solid $accent-color;
     }
+
     &::after {
       @include pseudo;
       z-index: 2;
@@ -76,6 +80,7 @@
       border: 8px solid $accent-color;
     }
   }
+
   &--children {
     &::before {
       @include pseudo;
@@ -100,7 +105,6 @@
   text-align: center;
   letter-spacing: -0.5px;
   color: $basic-black;
-  text-align: center;
 }
 
 @media (max-width: $desktop-width) {
@@ -115,8 +119,8 @@
     flex-wrap: wrap;
     justify-content: center;
     gap: 0;
-
   }
+
   .types__item {
     margin-right: 25px;
     margin-left: 25px;
@@ -126,6 +130,7 @@
   .types__img-wrapper {
     @include reset;
     margin-bottom: 18px;
+
     &--road {
       &::before {
         width: 127px;
@@ -135,14 +140,17 @@
         border: 18px solid $accent-color;
       }
     }
+
     &--mountain {
       &::before {
         display: none;
       }
+
       &::after {
         display: none;
       }
     }
+
     &--children {
       &::before {
         width: 68px;
@@ -154,11 +162,12 @@
     }
   }
 
-  .types h2{
+  .types h2 {
     margin-bottom: 30px;
     font-size: 24px;
     line-height: 41px;
   }
+
   .types h3 {
     font-size: 22px;
     line-height: 34px;
@@ -171,18 +180,21 @@
     padding-right: 0;
     padding-bottom: 11px;
   }
+
   .types__img-wrapper {
     &--road {
       &::before {
         left: -24px;
       }
     }
+
     &--children {
       &::before {
         right: -14px;
       }
     }
   }
+
   .types__item {
     margin-bottom: 41px;
   }

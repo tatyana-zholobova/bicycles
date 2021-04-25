@@ -2,15 +2,27 @@
   height: 100%;
 }
 
-
 .page__body {
   @include reset;
   min-height: 100%;
+  min-width: 320px;
   display: grid;
   grid-template-rows: min-content 1fr min-content;
   align-content: start;
   font-family: $font-family;
   font-weight: normal;
+
+  &--overlay {
+    &::before{
+      @include pseudo;
+      z-index: 1;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      background-color: rgba($color: $basic-black, $alpha: 0.5)
+    }
+  }
 }
 
 .page__promo {
@@ -26,12 +38,10 @@
 
 @media (max-width: $desktop-width) {
   .page__promo {
-    margin-top: 0;
+    margin-top: -50px;
     margin-bottom: 26px;
   }
-  .page__promo {
-    margin-top: -50px;
-  }
+
   .page__feedback {
     margin-top: 0;
     margin-bottom: 50px;
