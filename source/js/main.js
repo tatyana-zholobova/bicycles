@@ -1,9 +1,9 @@
 'use strict';
-const pageBody = document.querySelector('.page__body');
-const header = document.querySelector('.header');
-const siteNavigation = document.querySelector('.header__site-navigation');
-const buttonOpen = document.querySelector('.header__toggle--open');
-const buttonClose = document.querySelector('.header__toggle--close');
+var pageBody = document.querySelector('.page__body');
+var header = document.querySelector('.header');
+var siteNavigation = document.querySelector('.header__site-navigation');
+var buttonOpen = document.querySelector('.header__toggle--open');
+var buttonClose = document.querySelector('.header__toggle--close');
 
 header.classList.remove('header--no-js');
 
