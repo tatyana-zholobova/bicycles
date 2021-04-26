@@ -130,6 +130,8 @@
   .types__img-wrapper {
     @include reset;
     margin-bottom: 18px;
+    width: 270px;
+    height: 300px;
 
     &--road {
       &::before {
