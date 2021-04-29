@@ -19,6 +19,7 @@
   position: relative;
   z-index: 1;
   border-radius: 10px;
+  object-fit: cover;
 }
 
 .types h2 {
@@ -109,8 +110,8 @@
 
 @media (max-width: $desktop-width) {
   .types {
-    padding-top: 50px;
-    padding-bottom: 18px;
+    padding-top: 52px;
+    padding-bottom: 22px;
   }
 
   .types__list {
@@ -184,6 +185,7 @@
   }
 
   .types__img-wrapper {
+    margin-bottom: 21px;
     &--road {
       &::before {
         left: -24px;

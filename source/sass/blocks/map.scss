@@ -37,6 +37,7 @@
 }
 
 .map iframe {
+  display: block;
   width: 100%;
   max-width: 1200px;
   height: 530px;
@@ -45,7 +46,7 @@
 
 @media (max-width: $desktop-width) {
   .map {
-    padding-top: 155px;
+    padding-top: 153px;
     padding-right: 35px;
     padding-left: 35px;
   }

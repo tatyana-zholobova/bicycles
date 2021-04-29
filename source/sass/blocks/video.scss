@@ -32,10 +32,15 @@
 .video__preview-wrapper {
   position: relative;
   width: 929px;
+  height: 522px;
   margin-top: -44px;
   bottom: -100px;
   margin-left: auto;
   margin-right: auto;
+}
+
+.video__preview-wrapper img {
+  object-fit: cover;
 }
 
 .video__play-button {
@@ -75,8 +80,9 @@
 
   .video__preview-wrapper {
     width: 503px;
-    margin-top: -49px;
-    bottom: -90px;
+    height: 282px;
+    margin-top: -47px;
+    bottom: -88px;
   }
 
   .video__play-icon {
@@ -103,6 +109,7 @@
 
   .video__preview-wrapper {
     width: 288px;
+    height: 162px;
     margin-top: 4px;
     bottom: -50px;
   }

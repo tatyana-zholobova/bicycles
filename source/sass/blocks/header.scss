@@ -7,14 +7,17 @@
 }
 
 .header__wrapper {
-  position: relative;
+  position: absolute;
+  z-index: 100;
   width: 874px;
-  margin: 0 auto;
+  left: 50%;;
+  transform: translateX(-50%);
 }
 
 .header__logo {
   position: absolute;
-  top: 306px;
+  top: 318px;
+  left: -2px;
 }
 
 .header__site-navigation {
@@ -72,6 +75,7 @@
   }
 
   .header__wrapper {
+    position: relative;
     width: auto;
   }
 
