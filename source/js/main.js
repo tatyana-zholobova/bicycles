@@ -1,5 +1,5 @@
 'use strict';
-var pageBody = document.querySelector('.page__body');
+var pageBody = document.querySelector('.page-body');
 var header = document.querySelector('.header');
 var siteNavigation = document.querySelector('.header__site-navigation');
 var buttonOpen = document.querySelector('.header__toggle--open');
@@ -12,13 +12,13 @@ header.classList.remove('header--no-js');
 buttonOpen.addEventListener('click', function () {
   siteNavigation.classList.remove('header__site-navigation--close');
   siteNavigation.classList.add('header__site-navigation--open');
-  pageBody.classList.add('page__body--overlay');
+  pageBody.classList.add('page-body--overlay');
 });
 
 buttonClose.addEventListener('click', function () {
   siteNavigation.classList.remove('header__site-navigation--open');
   siteNavigation.classList.add('header__site-navigation--close');
-  pageBody.classList.remove('page__body--overlay');
+  pageBody.classList.remove('page-body--overlay');
 });
 
 telephoneInput.addEventListener('invalid', function () {

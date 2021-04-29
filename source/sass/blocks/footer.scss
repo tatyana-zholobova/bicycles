@@ -56,7 +56,7 @@
 
   .footer__contacts {
     width: 562px;
-    padding-right: 0px;
+    padding-right: 0;
   }
 
   .footer__icon {
@@ -82,6 +82,7 @@
 
   .footer__contacts-wrapper {
     padding-right: 0;
+
     &--email {
       margin-bottom: 9px;
       margin-right: 0;
