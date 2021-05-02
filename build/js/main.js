@@ -15,16 +15,24 @@ buttonOpen.addEventListener('click', function () {
   pageBody.classList.add('page-body--overlay');
 });
 
-buttonClose.addEventListener('click', function () {
+function closeMenu() {
   siteNavigation.classList.remove('header__site-navigation--open');
   siteNavigation.classList.add('header__site-navigation--close');
   pageBody.classList.remove('page-body--overlay');
-});
+}
+
+buttonClose.addEventListener('click', closeMenu);
 
 telephoneInput.addEventListener('invalid', function () {
   if (telephoneInput.validity.patternMismatch) {
     telephoneInput.setCustomValidity('Введите 11-значный номер телефона');
   } else {
     telephoneInput.setCustomValidity('');
+  }
+});
+
+siteNavigation.addEventListener('click', function (evt) {
+  if (evt.target.tagName === 'A') {
+    closeMenu();
   }
 });
